@@ -1,0 +1,49 @@
+{
+  "name":"BOT",
+  "description":"chat with bot",
+  "version":"1.0",
+  "manifest_version":3,
+ 
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      
+      "js": ["contentScript.js"],
+      "css": ["script.css"]
+
+     
+         
+         
+        
+      
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+    
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+ 
+  
+  "action": {
+    "default_title":"chatbot",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "brain.png",
+      "48": "brain.png"
+    }
+    
+  }
+  
+  
+  
+ 
+  
+}

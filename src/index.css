@@ -1,0 +1,42 @@
+html,body{
+  width: 400px;
+  height:450px;
+  background-color:#0a2047;
+  
+}
+.ant-switch{
+  width:150px;
+}
+.selected{
+  height: "50px";
+  width:"100px";
+  background-color: aqua;
+
+}
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);}
+
+.history-wrapper {
+  overflow-y: auto;
+}
+
+.history-wrapper::-webkit-scrollbar {
+  width: 10px;
+}
+
+.history-wrapper::-webkit-scrollbar-track {
+  background: rgb(202, 199, 199);
+  border-radius: 4px;
+  height: 80%;
+}
+
+.history-wrapper::-webkit-scrollbar-thumb {
+  background-color: #0a2047; 
+  border-radius: 4px; 
+}
